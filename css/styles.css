@@ -1,9 +1,24 @@
+/* General rule */
 * {
 box-sizing: border-box;
 }
 
+/* HTML elements page rules */
+
 body {
     font-family: 'Work Sans', sans-serif;
+}
+
+header {
+    background: lightgray;
+    text-align: center;
+    width: 100%;
+    margin-top: 0;
+}
+
+ul {
+    padding: 0;
+    list-style-type: none;
 }
 
 h1 {
@@ -33,21 +48,22 @@ a {
 }
 
 a:hover {
-    color: red;
+    transform: scale(1.05);
+    color: grey;
 }
 
-header {
+footer {
     background: lightgray;
-    text-align: center;
-    width: 100%;
-    margin-top: 0;
+    padding-top: 3em;
 }
 
-.main-nav li {
+/* Class rules */
+
+.main-nav a {
+    display: inline-block;
     background: white;
-    display: block;
-    margin-top: 5px;
-    margin-bottom: 5px;
+    margin-top: 10px;
+    margin-bottom: 10px;
     padding: 20px;
     width: 100%;
 }
@@ -70,11 +86,6 @@ header {
 
 }
 
-footer {
-    background: lightgray;
-    padding-top: 3em;
-}
-
 .phone,
 .email,
 .bottom-footer {
@@ -88,6 +99,11 @@ footer {
 
 .link-footer {
     float: right;
+    text-transform: uppercase;
+}
+
+.footer-nav {
+    display: none;
 }
 
 /* Clearfix */
@@ -96,3 +112,67 @@ footer {
     clear: both;
     display: table;
   }
+
+  /* Media Queries */
+
+@media (min-width: 768px) {
+
+/* Adjust top navigation */
+    nav{
+    display: inline-block;
+    }
+
+    h1{
+        padding: 0;
+    }
+
+    .main-nav li {
+        float: left;
+    }
+    
+    .main-nav a {
+        background: none;
+        padding: 0 1.5em 0 1.5em;
+        margin: 0;
+    }
+
+/* Adjust personal intro */
+    .person-intro img {
+        float: right;
+        max-width: 35%;
+        padding: 5px 5px 5px 25px;
+    }
+
+    .person-intro p {
+        text-align: left;
+    }
+
+/* Adjust layout of projects */
+    .right-column {
+        width: 49%;
+        float: right;
+    }
+
+    .left-column {
+        width: 49%;
+        float: left;
+    }
+
+/* Adjust layout of footer nav */
+    .link-footer {
+        display: none;
+    }
+
+    .footer-links {
+        float: right;
+    }
+
+    .footer-nav {
+        display: inline-block;
+    }
+
+    .footer-nav li {
+        float: left;
+        padding: 0 5px 0 5px;
+    }
+}
