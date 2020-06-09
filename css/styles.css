@@ -104,6 +104,7 @@ footer {
 
 .footer-nav {
     display: none;
+    text-transform: uppercase;
 }
 
 /* Clearfix */
@@ -113,7 +114,7 @@ footer {
     display: table;
   }
 
-  /* Media Queries */
+  /* ---------Media Queries 768px------------ */
 
 @media (min-width: 768px) {
 
@@ -149,12 +150,15 @@ footer {
 
 /* Adjust layout of projects */
     .right-column {
-        width: 49%;
+        width: 50%;
+        padding: 5px;
         float: right;
+        
     }
 
     .left-column {
-        width: 49%;
+        width: 50%;
+        padding: 5px;
         float: left;
     }
 
@@ -173,6 +177,41 @@ footer {
 
     .footer-nav li {
         float: left;
-        padding: 0 5px 0 5px;
+        padding: 10px;
     }
+
+    .footer-text {
+        width: 70%;
+        margin: auto;
+    }
+}
+
+  /* ---------Media Queries 1024px------------ */
+
+@media (min-width: 1024px) {
+
+/* Adjust layout of projects */
+    .left-column,
+    .right-column {
+        float: none;
+    }
+
+    .top-row section,
+    .bottom-row section {
+        display: inline-block;
+    }
+
+
+    .projects section {
+        max-width: 32%;
+    }
+
+
+
+/* Adjust of footer */
+    .footer-text {
+        width: 60%;
+
+    }
+
 }
