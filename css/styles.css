@@ -162,6 +162,11 @@ footer {
         float: left;
     }
 
+    .top-row p, .bottom-row p {
+        height: 150px;
+        overflow: auto;
+    }
+
 /* Adjust layout of footer nav */
     .link-footer {
         display: none;
@@ -204,6 +209,11 @@ footer {
 
     .projects section {
         max-width: 32%;
+    }
+
+    .top-row p, .bottom-row p {
+        height: 150px;
+        overflow: auto;
     }
 
 /* Adjust of footer */
