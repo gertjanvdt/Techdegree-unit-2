@@ -62,7 +62,6 @@ footer {
 .main-nav a {
     display: inline-block;
     background: white;
-    margin-top: 10px;
     margin-bottom: 10px;
     padding: 20px;
     width: 100%;
@@ -100,6 +99,7 @@ footer {
 .link-footer {
     float: right;
     text-transform: uppercase;
+    margin: auto;
 }
 
 .footer-nav {
@@ -205,8 +205,6 @@ footer {
     .projects section {
         max-width: 32%;
     }
-
-
 
 /* Adjust of footer */
     .footer-text {
